@@ -1,0 +1,25 @@
+.main-nav {
+  align-items: right;
+  margin: auto;
+  text-align: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  width: 100%;
+}
+
+.main-nav ul li {
+  margin: 1rem 1rem 0.5rem 0.5rem;
+  display: inline-block;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease-in-out;
+}
+
+.main-nav li:hover {
+  color: rgb(211, 68, 68);
+}
