@@ -1,7 +1,7 @@
 # willahern.com
 ## Overview
 
-The `who-am-i` project is a personal React app project to learn, test, and showcase my skills across a variety of technologies, including, but not limited to: `React`, `Vite`, `HTML+CSS`, `Docker`, `TypeScript`.
+This project is a personal React app project to learn, test, and showcase my skills across a variety of technologies, including, but not limited to: `React`, `Vite`, `HTML+CSS`, `Docker`, `TypeScript`.
 
 The goal is to completely containerize the app and host it in Amazon Web Services (AWS).
 
