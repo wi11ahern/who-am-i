@@ -81,7 +81,7 @@ jobs:
     - name: Get the latest task definition
       id: fetch-task-definition
       run: |
-        aws ecs --region ${{ env.AWS_REGION }} describe-task-definition --task-definition ${{ env.ECS_SERVICE }} >| task-definition.json
+        aws ecs --region ${{ env.AWS_REGION }} describe-task-definition --task-definition ${{ env.ECS_SERVICE }} --query "taskDefinition" >| task-definition.json
         cat task-definition.json
 
     - name: Fill in the new image ID in the Amazon ECS task definition
