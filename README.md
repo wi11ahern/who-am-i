@@ -1,4 +1,4 @@
-# willahern.com
+# williamahern.com
 ## Overview
 
 This project is a personal React app project to learn, test, and showcase my skills across a variety of technologies, including, but not limited to: `React`, `Vite`, `HTML+CSS`, `Docker`, `TypeScript`.
