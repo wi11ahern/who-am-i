@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.574);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.574);
   background-color: var(--black);
   overflow: hidden;
   display: flex;

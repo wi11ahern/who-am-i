@@ -1,5 +1,7 @@
 .main-nav {
   width: 100%;
+  min-width: 50%;
+  overflow: hidden;
 }
 
 .main-nav ul {
@@ -28,56 +30,58 @@
   color: rgba(255, 255, 255, 0.778);
 }
 
-.main-nav li a:hover span {
-  opacity: 0;
-  transition: all 0.15s ease-in-out;
-}
+@media only screen and (min-width: 600px) {
+  .main-nav li a:hover span {
+    opacity: 0;
+    transition: all 0.15s ease-in-out;
+  }
 
-.about:hover::before {
-  opacity: 1;
-  content: "0001";
-  position: absolute;
-  right: 380px;
-  color: var(--red-alt);
-}
+  .about:hover::before {
+    opacity: 1;
+    content: "0001";
+    position: absolute;
+    right: 388px;
+    color: var(--red-alt);
+  }
 
-.about:hover::after {
-  content: "<";
-  position: absolute;
-  right: 319px;
-  color: var(--red-alt);
-  font-weight: bolder;
-}
+  .about:hover::after {
+    content: "<";
+    position: absolute;
+    right: 325px;
+    color: var(--red-alt);
+    font-weight: bolder;
+  }
 
-.experience:hover::before {
-  opacity: 1;
-  content: "0010";
-  position: absolute;
-  right: 258px;
-  color: var(--red-alt);
-}
+  .experience:hover::before {
+    opacity: 1;
+    content: "0010";
+    position: absolute;
+    right: 262px;
+    color: var(--red-alt);
+  }
 
-.experience:hover::after {
-  content: "<";
-  position: absolute;
-  right: 160px;
-  color: var(--red-alt);
-  font-weight: bolder;
-}
+  .experience:hover::after {
+    content: "<";
+    position: absolute;
+    right: 163px;
+    color: var(--red-alt);
+    font-weight: bolder;
+  }
 
-.contact:hover::before {
-  opacity: 1;
-  content: "0011";
-  margin-left: 0;
-  position: absolute;
-  right: 98px;
-  color: var(--red-alt);
-}
+  .contact:hover::before {
+    opacity: 1;
+    content: "0011";
+    margin-left: 0;
+    position: absolute;
+    right: 99px;
+    color: var(--red-alt);
+  }
 
-.contact:hover::after {
-  content: "<";
-  position: absolute;
-  right: 25px;
-  color: var(--red-alt);
-  font-weight: bolder;
+  .contact:hover::after {
+    content: "<";
+    position: absolute;
+    right: 24px;
+    color: var(--red-alt);
+    font-weight: bolder;
+  }
 }
