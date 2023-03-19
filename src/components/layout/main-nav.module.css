@@ -1,20 +1,25 @@
 .main-nav {
-  align-items: right;
-  margin: auto;
-  text-align: center;
-}
-
-.main-nav ul {
-  list-style: none;
   width: 100%;
 }
 
-.main-nav ul li {
-  margin: 1rem 1rem 0.5rem 0.5rem;
-  display: inline-block;
+.main-nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  float: right;
+  align-items: center;
+}
+
+.main-nav li {
+  line-height: 40px;
+  float: left;
+  margin: 0 1rem 0 1rem;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .main-nav a {
+  padding: 4px;
   text-decoration: none;
   color: inherit;
   transition: 0.3s ease-in-out;
