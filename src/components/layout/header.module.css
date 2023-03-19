@@ -3,7 +3,8 @@
   flex-direction: row;
   width: 100%;
   height: 20%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.286);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.574);
+  background-color: rgb(26, 23, 23);
 }
 
 .container {
