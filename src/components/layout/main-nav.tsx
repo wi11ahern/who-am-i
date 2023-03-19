@@ -5,13 +5,19 @@ const MainNav = () => {
     <nav className={styles["main-nav"]}>
       <ul>
         <li>
-          <a href="">01. About</a>
+          <a href="" className={styles.about}>
+            <span>01</span>. About
+          </a>
         </li>
         <li>
-          <a href="">02. Experience</a>
+          <a href="" className={styles.experience}>
+            <span>02</span>. Experience
+          </a>
         </li>
-        <li>
-          <a href="">03. Contact</a>
+        <li className={styles.contactli}>
+          <a href="" className={styles.contact}>
+            <span>03</span>. Contact
+          </a>
         </li>
       </ul>
     </nav>
