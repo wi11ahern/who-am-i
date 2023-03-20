@@ -5,7 +5,7 @@ const MainNav = () => {
     <nav className={styles["main-nav"]}>
       <ul>
         <li>
-          <a href="" className={styles.about}>
+          <a href="#about" className={styles.about}>
             <span>01</span>. About
           </a>
         </li>

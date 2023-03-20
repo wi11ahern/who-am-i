@@ -3,12 +3,15 @@ import styles from "./card.module.css";
 
 interface Props {
   children: ReactNode;
+  id?: string;
   className?: string;
 }
 
 const Card = (props: Props) => {
   return (
-    <div className={`${styles.card} ${props.className}`}>{props.children}</div>
+    <div id={props.id} className={`${styles.card} ${props.className}`}>
+      {props.children}
+    </div>
   );
 };
 
