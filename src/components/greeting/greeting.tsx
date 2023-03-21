@@ -18,10 +18,6 @@ const Greeting = (props: Props) => {
         I am a <span>builder</span>, <span>problem solver</span>, and{" "}
         <span>lifelong learner</span>.
       </p>
-      <p className={styles["greeting-bot"]}>
-        Thank you for taking the time to visit my site and if you would like to
-        chat or if you have any questions, please feel free to reach out.
-      </p>
     </Card>
   );
 };
