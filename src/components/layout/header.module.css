@@ -6,12 +6,20 @@
   display: flex;
   position: fixed;
   top: 0px;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s ease;
   height: 5.25rem;
   align-items: center;
 }
 
+.header.dark {
+  box-shadow: none;
+  box-shadow: 0 1px 0px var(--grey);
+}
+
 .hide {
   height: 0;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hide.dark {
+  border-bottom: none;
 }

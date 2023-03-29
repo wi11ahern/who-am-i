@@ -8,32 +8,32 @@
 }
 
 .greeting-top {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  font-size: 1.25rem;
   background-color: transparent;
 }
 
 .name {
   background-color: transparent;
-  margin: 0;
   font-size: 6rem;
   text-align: left;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.557);
-  margin-bottom: 1rem;
 }
 
-.bracket {
-  color: var(--black);
-  text-shadow: none;
+.name.dark {
+  color: var(--red-alt);
 }
 
 .greeting-bot {
   margin-top: 0;
+  margin-left: 16px;
   background-color: transparent;
 }
 
 .greeting-bot span {
-  /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322); */
   color: rgba(0, 0, 0, 0.699);
-  font-weight: bold;
   font-size: 1.25rem;
+}
+
+.greeting-bot.dark span {
+  color: var(--red-alt);
 }

@@ -1,6 +1,6 @@
 /* The switch - the box around the slider */
 .switch {
-  margin: auto 5px;
+  margin: auto 1rem auto 1rem;
   position: relative;
   display: inline-block;
   min-width: 20px;

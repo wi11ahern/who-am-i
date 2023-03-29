@@ -9,9 +9,17 @@
   --red: rgb(182, 64, 64);
   --red-alt: rgb(211, 68, 68);
   --black: rgb(26, 23, 23);
+  --grey: #a9a9a9;
 }
 
-body {
+.light {
   background-color: var(--red);
   color: white;
+  transition-duration: 0.5s;
+}
+
+.dark {
+  background-color: var(--black);
+  color: white;
+  transition-duration: 0.5s;
 }
