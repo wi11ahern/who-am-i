@@ -1,8 +1,7 @@
-import About from "./components/about/about";
-import Greeting from "./components/greeting/greeting";
 import Header from "./components/layout/header";
 import { useSelector } from "react-redux";
 import { RootState } from "./store/store";
+import Content from "./components/layout/content";
 
 function App() {
   const theme = useSelector((state: RootState) => state.ui.theme);
@@ -11,8 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <Greeting />
-      <About />
+      <Content />
     </>
   );
 }

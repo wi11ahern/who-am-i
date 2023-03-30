@@ -1,22 +1,19 @@
 .greeting {
-  margin: 10rem auto 0 auto;
-  width: 800px;
-  text-align: left;
+  margin: 0 0 0 10rem;
+  align-self: flex-start;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   background-color: transparent;
 }
 
 .greeting-top {
-  /* margin-bottom: 1rem; */
-  font-size: 1.25rem;
-  background-color: transparent;
+  font-size: 1.5rem;
 }
 
 .name {
-  background-color: transparent;
   font-size: 6rem;
-  text-align: left;
+  flex-wrap: wrap;
 }
 
 .name.dark {
@@ -24,14 +21,11 @@
 }
 
 .greeting-bot {
-  margin-top: 0;
-  margin-left: 16px;
-  background-color: transparent;
+  font-size: 1.5rem;
 }
 
 .greeting-bot span {
   color: rgba(0, 0, 0, 0.699);
-  font-size: 1.25rem;
 }
 
 .greeting-bot.dark span {
