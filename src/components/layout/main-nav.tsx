@@ -15,7 +15,7 @@ const MainNav = () => {
           </a>
         </li>
         <li className={styles.contactli}>
-          <a href="" className={styles.contact}>
+          <a href="#contact" className={styles.contact}>
             <span>03</span>. Contact
           </a>
         </li>
