@@ -13,7 +13,7 @@ const Greeting = (props: Props) => {
       <p className={styles["greeting-top"]}>Welcome! My name is</p>
       <h1 className={`${styles.name} ${styles[theme]}`}>
         {/* <span className={`${styles.bracket} ${styles[theme]}`}>&gt;</span> */}
-        William Ahern
+        William Ahern<span className={styles.period}>.</span>
       </h1>
       <p className={`${styles["greeting-bot"]} ${styles[theme]}`}>
         I am a software engineer with experience across the stack, but perhaps
