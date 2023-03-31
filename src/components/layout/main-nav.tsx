@@ -10,7 +10,7 @@ const MainNav = () => {
           </a>
         </li>
         <li>
-          <a href="" className={styles.experience}>
+          <a href="#experience" className={styles.experience}>
             <span>02</span>. Experience
           </a>
         </li>

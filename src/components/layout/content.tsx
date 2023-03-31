@@ -1,5 +1,6 @@
 import About from "../about/about";
 import Contact from "../contact/contact";
+import Experience from "../experience/experience";
 import Greeting from "../greeting/greeting";
 import styles from "./content.module.css";
 
@@ -10,6 +11,7 @@ const Content = (props: Props) => {
     <div className={styles.content}>
       <Greeting />
       <About />
+      <Experience />
       <Contact />
     </div>
   );

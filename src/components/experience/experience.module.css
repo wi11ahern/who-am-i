@@ -1,5 +1,6 @@
-.contact {
-  padding: 5rem 2rem;
+.experience {
+  padding: 3rem 3rem;
+  min-width: 800px;
   margin: 100px auto;
   text-align: left;
   border-radius: 20px;
@@ -11,11 +12,11 @@
   box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
-.contact h2 {
-  margin: 0 0 2rem 0;
+.experience h2 {
+  margin: 0 auto 2rem 0;
 }
 
-.contact p {
+.experience p {
   margin: 0 0 2rem 0;
   width: 50%;
   min-width: 50%;

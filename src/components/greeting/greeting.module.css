@@ -1,7 +1,9 @@
 .greeting {
-  margin: 0 auto 0 auto;
-  padding: 0 2rem 0 2rem;
-  align-self: flex-start;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100vh;
+  min-height: 100vh;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   background-color: transparent;
