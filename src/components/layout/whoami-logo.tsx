@@ -1,12 +1,12 @@
 import styles from "./whoami-logo.module.css";
 
 const WhoAmILogo = () => {
-  const reloadHandler = () => {
-    location.reload();
+  const backToTopHandler = () => {
+    window.scrollTo(0, 0);
   };
 
   return (
-    <button className={styles.btn} onClick={reloadHandler}>
+    <button className={styles.btn} onClick={backToTopHandler}>
       <div className={styles.terminal}>
         <p className={styles.command}>
           <span>$</span>whoami
