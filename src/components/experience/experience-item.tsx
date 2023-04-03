@@ -25,7 +25,7 @@ const ExperienceItem = (props: Props) => {
 
   return (
     <div hidden={activeExperienceId !== props.id} className={styles.experience}>
-      <h2>{props.experience.experienceName}</h2>
+      <h2 className={styles.title}>{props.experience.experienceName}</h2>
       <p>
         {props.experience.startDate} - {props.experience.endDate}
       </p>

@@ -56,7 +56,7 @@ const experiences = [
 const Experience = (props: Props) => {
   return (
     <Card className={styles.experience} id="experience">
-      <h2>02. Experience</h2>
+      <h2 className={styles.title}>02. Experience</h2>
       <div className={styles.content}>
         <ExperienceSelectorList experiences={experiences} />
         <ExperienceList experiences={experiences} />
