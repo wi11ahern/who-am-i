@@ -33,7 +33,7 @@ const experiences = [
       "Created and managed AWS roles for secure service and data access.",
       "Defined, organized, and scoped work by creating features and user stories in Jira and performing Agile scrum rituals.",
       "Led a team of engineers to develop an end-to-end testing framework for an elaborate, multi-team ETL workflow in order to ensure accuracy of data and in doing so, reducing Cigna’s financial risk.",
-      "Collaboratively engineered a data ingestion tool that automated a complex, manual process of ingesting on-prem data sources into S3 and Redshift, reducing workflow time from days to hours and enforcing strict SLAs",
+      "Collaboratively engineered a data ingestion tool that automated a complex, manual process of ingesting on-prem data sources into S3 and Redshift, reducing workflow time from days to hours and enforcing strict SLAs.",
     ],
   },
   {
