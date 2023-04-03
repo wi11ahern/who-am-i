@@ -3,14 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
   --red: rgb(182, 64, 64);
+  --red-low-opacity: rgba(182, 80, 80, 0.274);
   --red-alt: rgb(211, 68, 68);
   --orange: rgb(244, 154, 75);
   --black: rgb(26, 23, 23);
   --grey: #a9a9a9;
+  --selector-height: 40px;
 }
 
 .light {

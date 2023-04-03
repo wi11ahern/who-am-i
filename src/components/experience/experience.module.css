@@ -1,14 +1,11 @@
 .experience {
   padding: 3rem 3rem;
   min-width: 800px;
+  max-width: 800px;
   margin: 100px auto;
   text-align: left;
   border-radius: 20px;
   font-weight: lighter;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
   box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
@@ -16,20 +13,9 @@
   margin: 0 auto 2rem 0;
 }
 
-.experience p {
-  margin: 0 0 2rem 0;
-  width: 50%;
-  min-width: 50%;
-  text-align: center;
-}
-
-.email-icon {
-  width: 50px;
-  height: 50px;
-  color: var(--red);
-  transition: all 0.5s ease;
-}
-
-.email-icon:hover {
-  color: var(--orange);
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: left;
+  justify-content: center;
 }

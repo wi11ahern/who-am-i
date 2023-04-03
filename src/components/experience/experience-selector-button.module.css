@@ -1,0 +1,30 @@
+.button {
+  position: relative;
+  height: var(--selector-height);
+  padding: 0 20px 0;
+  width: 100%;
+  display: flex;
+  border: none;
+  border-left: 2px solid var(--red);
+  color: white;
+  background-color: transparent;
+  text-align: left;
+  font-size: 1rem;
+  text-align: left;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.button.active {
+  transition: all 0.5s ease;
+  background-color: var(--red-low-opacity);
+}
+
+.button:hover {
+  color: var(--orange);
+}
+
+.button:active {
+  color: var(--red);
+}
