@@ -11,7 +11,7 @@ export type SetThemeAction = {
 };
 
 const initialState = {
-  theme: "light",
+  theme: Theme.Dark,
 };
 
 const uiSlice = createSlice({

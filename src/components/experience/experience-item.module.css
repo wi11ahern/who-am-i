@@ -1,3 +1,7 @@
+.experience {
+  width: calc(var(--card-max-width) - 360px);
+}
+
 .experience h2 {
   margin: 0 0 0.5rem 0;
 }
@@ -8,8 +12,14 @@
   font-weight: bold;
 }
 
+.experience ul {
+  max-height: calc(var(--card-max-height) - 250px);
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
 .experience li {
   max-width: 400px;
-  min-width: 300px;
+  min-width: 400px;
   margin: 0 0 1rem 0;
 }

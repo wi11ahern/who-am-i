@@ -10,11 +10,11 @@
 }
 
 .greeting-top {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .name {
-  font-size: 6rem;
+  font-size: 8rem;
   flex-wrap: wrap;
 }
 
@@ -27,13 +27,16 @@
 }
 
 .greeting-bot {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .greeting-bot span {
-  color: rgba(0, 0, 0, 0.699);
+  font-weight: 700;
+  text-decoration: underline 1px;
+  text-underline-offset: 7px;
 }
 
 .greeting-bot.dark span {
   color: var(--red-alt);
+  text-decoration: none;
 }

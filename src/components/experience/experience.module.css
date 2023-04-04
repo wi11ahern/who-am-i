@@ -1,7 +1,9 @@
 .experience {
   padding: 3rem 3rem;
-  min-width: 800px;
-  max-width: 800px;
+  min-width: var(--card-max-width);
+  max-width: var(--card-max-width);
+  min-height: var(--card-max-height);
+  max-height: var(--card-max-height);
   margin: 100px auto;
   text-align: left;
   border-radius: 20px;
@@ -16,6 +18,6 @@
 .content {
   display: flex;
   flex-flow: row wrap;
-  align-items: left;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }

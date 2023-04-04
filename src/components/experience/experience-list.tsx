@@ -11,7 +11,7 @@ const ExperienceList = (props: Props) => {
     return <ExperienceItem key={index} id={index} experience={experience} />;
   });
 
-  return <div>{experienceItems}</div>;
+  return <div className={styles.experiences}>{experienceItems}</div>;
 };
 
 export default ExperienceList;

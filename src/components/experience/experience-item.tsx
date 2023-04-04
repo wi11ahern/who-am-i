@@ -19,9 +19,9 @@ const ExperienceItem = (props: Props) => {
     (state: RootState) => state.experience.activeExperienceId
   );
 
-  const summaryItems = props.experience.summaryItems.map((summaryItem) => (
-    <li>{summaryItem}</li>
-  ));
+  const summaryItems = props.experience.summaryItems.map(
+    (summaryItem, index) => <li key={index}>{summaryItem}</li>
+  );
 
   return (
     <div hidden={activeExperienceId !== props.id} className={styles.experience}>
