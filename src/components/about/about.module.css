@@ -52,7 +52,6 @@
   width: 20%;
   min-width: 120px;
   max-width: 200px;
-  margin: 0 0 0 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -61,10 +60,6 @@
   border-radius: 100px;
   border: solid 4px var(--red-alt);
   transition: all 0.2s ease-in-out;
-}
-
-.profile img:hover {
-  filter: none;
 }
 
 .profile a {
