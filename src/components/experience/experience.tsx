@@ -2,14 +2,13 @@ import Card from "../ui/card";
 import ExperienceList from "./experience-list";
 import ExperienceSelectorList from "./experience-selector-list";
 import styles from "./experience.module.css";
-import { useSelector } from "react-redux";
-import { RootState } from "../../store/store";
 
 interface Props {}
 
 const experiences = [
   {
     experienceName: "Amazon Web Services",
+    roleName: "Systems Development Engineer II",
     startDate: "May 2022",
     endDate: "Present",
     summaryItems: [
@@ -22,6 +21,7 @@ const experiences = [
   },
   {
     experienceName: "Cigna (2020)",
+    roleName: "Software Engineering Advisor",
     startDate: "January 2020",
     endDate: "May 2022",
     summaryItems: [
@@ -38,6 +38,7 @@ const experiences = [
   },
   {
     experienceName: "Cigna (2017)",
+    roleName: "Software Engineer",
     startDate: "January 2017",
     endDate: "May 2020",
     summaryItems: [

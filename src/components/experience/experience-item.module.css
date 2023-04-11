@@ -4,18 +4,24 @@
 
 .experience h2 {
   margin: 0 0 0.5rem 0;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
-.experience p {
+.role {
+  margin: 0 0 4px 0;
+  font-weight: 500;
+}
+
+.tenure {
   margin: 0 0 1.5rem 0;
   font-style: italic;
-  font-weight: bold;
+  font-size: .9rem;
 }
 
 .experience ul {
-  max-height: calc(var(--card-max-height) - 250px);
-  overflow-y: scroll;
-  overflow-x: auto;
+  max-height: calc(var(--card-max-height) - 260px);
+  overflow: auto;
 }
 
 .experience li {

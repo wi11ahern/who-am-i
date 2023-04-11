@@ -4,6 +4,7 @@ import { RootState } from "../../store/store";
 
 export type Experience = {
   experienceName: string;
+  roleName: string;
   startDate: string;
   endDate: string;
   summaryItems: string[];
@@ -26,7 +27,8 @@ const ExperienceItem = (props: Props) => {
   return (
     <div hidden={activeExperienceId !== props.id} className={styles.experience}>
       <h2 className={styles.title}>{props.experience.experienceName}</h2>
-      <p>
+      <p className={styles.role}>{props.experience.roleName}</p>
+      <p className={styles.tenure}>
         {props.experience.startDate} - {props.experience.endDate}
       </p>
       <ul>{summaryItems}</ul>
