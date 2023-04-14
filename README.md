@@ -1,9 +1,7 @@
 # williamahern.com
 ## Overview
 
-This project is a personal React app project to learn, test, and showcase my skills across a variety of technologies, including, but not limited to: `React`, `Vite`, `HTML+CSS`, `Docker`, `TypeScript`.
-
-The goal is to completely containerize the app and host it in Amazon Web Services (AWS).
+This project is a personal React app to learn more about a variety of technologies such as `React`, `Redux`, `Vite`, `HTML+CSS`, `Docker`, and `TypeScript`!
 
 ## Tech Stack
 
@@ -15,21 +13,15 @@ The goal is to completely containerize the app and host it in Amazon Web Service
 Clone the project.
 
 ```bash
-  git clone https://github.com/wi11ahern/who-am-i.git
+  git clone https://github.com/wi11ahern/williamahern-com.git
 ```
 
 Go to the project directory.
 
 ```bash
-  cd who-am-i
-```
-### Option 1: With Docker
-Use `docker-compose` to build and run the app via the Node web server.
-```bash
-docker compose up
+  cd williamahern-com
 ```
 
-### Option 2: Without Docker
 Install dependencies.
 
 ```bash
