@@ -7,7 +7,7 @@
   padding: 10px;
   background-color: var(--black);
   border-right: solid 1px var(--grey);
-  color: white;
+  color: var(--t3-white);
   min-width: 5.5rem;
   height: 100%;
   text-align: left;
