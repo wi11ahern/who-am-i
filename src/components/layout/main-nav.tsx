@@ -1,24 +1,27 @@
-import styles from "./main-nav.module.css";
+import NavItem from "./nav-item";
 
 const MainNav = () => {
   return (
-    <nav className={styles["main-nav"]}>
-      <ul>
-        <li>
-          <a href="#about" className={styles.about}>
-            <span>01</span>. About
-          </a>
-        </li>
-        <li>
-          <a href="#experience" className={styles.experience}>
-            <span>02</span>. Experience
-          </a>
-        </li>
-        <li className={styles.contactli}>
-          <a href="#contact" className={styles.contact}>
-            <span>03</span>. Contact
-          </a>
-        </li>
+    <nav className="w-full mr-8">
+      <ul className="h-full flex float-right items-center">
+        <NavItem
+          name="About"
+          beforeContent="01"
+          beforeContentOffset="right-[48px]"
+          hoverContent="0001"
+        />
+        <NavItem
+          name="Experience"
+          beforeContent="02"
+          beforeContentOffset="right-[82px]"
+          hoverContent="0010"
+        />
+        <NavItem
+          name="Contact"
+          beforeContent="03"
+          beforeContentOffset="right-[60px]"
+          hoverContent="0011"
+        />
       </ul>
     </nav>
   );

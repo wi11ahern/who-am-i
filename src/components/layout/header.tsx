@@ -5,7 +5,8 @@ import WhoAmILogo from "./whoami-logo";
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
-  const headerHeight = scrollDirection === "down" ? "h-0 border-none" : "h-headerHeight border-b";
+  const headerHeight =
+    scrollDirection === "down" ? "h-0 border-none" : "h-headerHeight border-b";
 
   return (
     <header
