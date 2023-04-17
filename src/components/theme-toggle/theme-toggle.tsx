@@ -3,7 +3,6 @@ import { Theme, uiActions } from "../../store/ui";
 import { RootState } from "../../store/store";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faLightbulb } from "@fortawesome/free-solid-svg-icons";
-import styles from "./theme-toggle.module.css";
 import { useRef, useState } from "react";
 
 interface Props {}
@@ -22,17 +21,32 @@ const ThemeToggle = () => {
   };
 
   return (
-    <label htmlFor="theme-toggle" className={styles.switch}>
+    <label
+      htmlFor="theme-toggle"
+      className="relative inline-block mx-[1rem] my-auto min-w-[20px] h-10 min-h-[40px] cursor-pointer"
+    >
       <input
         id="theme-toggle"
         type="checkbox"
         onChange={onToggleHandler}
         ref={toggleRef}
         checked={checked}
+        className="peer opacity-0 w-0 h-0"
       />
-      <span className={styles.slider}></span>
-      <FontAwesomeIcon icon={faMoon} className={styles.moon} />
-      <FontAwesomeIcon icon={faLightbulb} className={styles.lightbulb} />
+      <span
+        className="absolute z-[1] top-0 left-0 bottom-0 right-0 border-solid border-[1px] rounded-full
+                  before:absolute before:content-[''] before:h-4 before:w-4 before:left-[1px] before:top-[1px]
+                  before:rounded-full before:bg-slate-300
+                  peer-checked:before:translate-y-5 before:transition-all"
+      />
+      <FontAwesomeIcon
+        icon={faMoon}
+        className="absolute top-[2px] left-[5px] w-[10px]"
+      />
+      <FontAwesomeIcon
+        icon={faLightbulb}
+        className="absolute left-[5.5px] right-0 bottom-[2px] w-[10px] text-yellow-500"
+      />
     </label>
   );
 };
