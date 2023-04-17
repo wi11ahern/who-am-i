@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import styles from "./card.module.css";
 
 interface Props {
   children: ReactNode;
@@ -9,7 +8,10 @@ interface Props {
 
 const Card = (props: Props) => {
   return (
-    <div id={props.id} className={`${styles.card} ${props.className}`}>
+    <div
+      id={props.id}
+      className={`bg-inherit text-white rounded-md m-4 p-3 ${props.className}`}
+    >
       {props.children}
     </div>
   );
