@@ -1,5 +1,3 @@
-// import styles from "./whoami-logo.module.css";
-
 const WhoAmILogo = () => {
   const backToTopHandler = () => {
     window.scrollTo(0, 0);
