@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import ExperienceSelectorButton from "./experience-selector-button";
 import { RootState } from "../../store/store";
-import styles from "./experience-selector-list.module.css";
 import { experienceActions } from "../../store/experience";
 
 interface Props {
@@ -32,14 +31,17 @@ const ExperienceSelectorList = (props: Props) => {
   );
 
   return (
-    <div className={styles.selector}>
-      <div className={styles.buttons}>{experienceSelectorButtons}</div>
+    <div className="relative self-start flex flex-nowrap items-start justify-start w-[30%] mr-8">
       <div
-        className={styles.highlighter}
+        className={`absolute top-0 left-0 w-1 h-10 rounded-3xl bg-emerald-300
+                    transition-all duration-150`}
         style={{
-          transform: `translateY(calc(${activeExperienceId} * var(--selector-height)))`,
+          transform: `translateY(calc(${activeExperienceId} * 40px))`,
         }}
-      ></div>
+      />
+      <ul className="flex flex-col justify-start ml-1">
+        {experienceSelectorButtons}
+      </ul>
     </div>
   );
 };

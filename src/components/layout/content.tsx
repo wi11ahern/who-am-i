@@ -2,13 +2,10 @@ import About from "../about/about";
 import Contact from "../contact/contact";
 import Experience from "../experience/experience";
 import Greeting from "../greeting/greeting";
-import styles from "./content.module.css";
 
-interface Props {}
-
-const Content = (props: Props) => {
+const Content = () => {
   return (
-    <div className={styles.content}>
+    <div className="flex flex-col mx-auto mt-60 w-full min-h-screen">
       <Greeting />
       <About />
       <Experience />
