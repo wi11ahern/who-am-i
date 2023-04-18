@@ -21,7 +21,7 @@ const ExperienceItem = (props: Props) => {
 
   const summaryItems = props.experience.summaryItems.map(
     (summaryItem, index) => (
-      <li key={index} className="max-w-[300px] mb-2 ">
+      <li key={index} className="max-w-[300px] mb-2 font-light">
         {summaryItem}
       </li>
     )
@@ -29,7 +29,7 @@ const ExperienceItem = (props: Props) => {
 
   return (
     <div hidden={activeExperienceId !== props.id} className="max-w-[500px]">
-      <h2 className="text-lg underline underline-offset-[6px] mb-2">
+      <h2 className="text-lg text-emerald-400 underline underline-offset-[6px] mb-2">
         {props.experience.experienceName}
       </h2>
       <p className="font-semibold mb-1">{props.experience.roleName}</p>
