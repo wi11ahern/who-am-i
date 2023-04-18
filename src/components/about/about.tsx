@@ -1,5 +1,4 @@
 import Card from "../ui/card";
-import styles from "./about.module.css";
 import profilePicture from "../../assets/wa.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -9,7 +8,7 @@ interface Props {}
 const About = (props: Props) => {
   return (
     <Card
-      className="flex items-center flex-row flex-wrap min-w-[600px] max-w-[600px] mx-auto"
+      className="flex items-center flex-row flex-wrap min-w-[600px] max-w-[600px] mx-auto mb-40"
       id="about"
     >
       <div className="flex-grow-3 w-[65%] mx-auto">

@@ -1,20 +1,18 @@
 import Card from "../ui/card";
-import styles from "./contact.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-interface Props {}
 
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
     <Card
-      className="flex items-center flex-col min-w-[600px] max-w-[600px] mx-auto"
+      className="flex items-center flex-col min-w-[600px] max-w-[600px] mx-auto mb-20"
       id="contact"
     >
       <h2 className="text-xl font-bold underline underline-offset-4 pb-4 text-yellow-500">
         03. Contact
       </h2>
-      <p>
+      <p className="max-w-[50%] text-center">
         Have a question? Just want to say hi? No problem! My inbox is always
         open.
       </p>

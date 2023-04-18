@@ -55,7 +55,7 @@ const experiences = [
 
 const Experience = (props: Props) => {
   return (
-    <Card className="flex flex-wrap flex-col mx-auto min-w-[600px]" id="experience">
+    <Card className="flex flex-wrap flex-col mx-auto min-w-[600px] mb-40" id="experience">
       <h2 className="self-start text-xl font-bold underline underline-offset-4 pb-4 text-yellow-500 ">
         02. Experience
       </h2>
