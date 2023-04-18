@@ -12,7 +12,7 @@ const Header = () => {
     <header
       className={`flex w-full ${headerHeight} top-0 z-10 fixed content-center bg-slate-800 shadow-lg 
                   transition-all ease-in-out duration-500 overflow-hidden
-                  dark:bg-slate-950 border-gray-300 text-white`}
+                  dark:bg-slate-950 text-white`}
     >
       <WhoAmILogo />
       <ThemeToggle />
