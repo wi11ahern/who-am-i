@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header
       className={`flex w-full ${headerHeight} top-0 z-10 fixed content-center bg-slate-800 shadow-lg 
-                  transition-all ease-in-out duration-500 overflow-hidden
+                  transition-all ease-in-out duration-300 overflow-hidden
                   dark:bg-slate-950 text-white`}
     >
       <WhoAmILogo />

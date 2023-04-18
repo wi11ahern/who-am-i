@@ -12,8 +12,10 @@
 
 .light {
   background-color: #1e293b;
+  transition-duration: 300ms;
 }
 
 .dark {
   background-color: #020617;
+  transition-duration: 300ms;
 }
