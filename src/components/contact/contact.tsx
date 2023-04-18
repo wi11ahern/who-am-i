@@ -24,7 +24,7 @@ const Contact = () => {
       >
         <FontAwesomeIcon
           icon={faEnvelope}
-          className="w-[50px] h-[50px] text-blue-400 hover:text-emerald-500 hover:animate-wiggle"
+          className="w-[50px] h-[50px] text-blue-400 hover:text-emerald-300 hover:animate-wiggle"
         />
       </a>
     </Card>

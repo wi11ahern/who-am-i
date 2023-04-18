@@ -29,7 +29,7 @@ const About = (props: Props) => {
           <a
             href="https://cigna.com"
             target="_blank"
-            className="text-emerald-400 hover:text-blue-300"
+            className="text-blue-400 hover:text-emerald-300"
           >
             healthcare
           </a>{" "}
@@ -37,7 +37,7 @@ const About = (props: Props) => {
           <a
             href="https://aws.amazon.com"
             target="_blank"
-            className="text-emerald-400 hover:text-blue-300"
+            className="text-blue-400 hover:text-emerald-300"
           >
             global technology and cloud services
           </a>
