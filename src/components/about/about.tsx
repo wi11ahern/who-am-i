@@ -8,7 +8,7 @@ interface Props {}
 const About = (props: Props) => {
   return (
     <Card
-      className="flex items-center flex-row flex-wrap min-w-[600px] max-w-[600px] mx-auto mb-40"
+      className="flex items-center flex-row flex-wrap min-w-[600px] max-w-[800px] mx-auto mb-40"
       id="about"
     >
       <div className="flex-grow-3 w-[65%] mx-auto">
