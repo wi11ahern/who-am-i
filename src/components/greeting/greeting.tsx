@@ -12,9 +12,9 @@ const Greeting = () => {
         importantly,
       </p>
       <p className="text-2xl">
-        I am a <span className="text-emerald-500">builder</span>,{" "}
-        <span className="text-emerald-500">problem solver</span>, and{" "}
-        <span className="text-emerald-500">lifelong learner</span>.
+        I am a <span className="text-emerald-400">builder</span>,{" "}
+        <span className="text-emerald-400">problem solver</span>, and{" "}
+        <span className="text-emerald-400">lifelong learner</span>.
       </p>
     </Card>
   );
