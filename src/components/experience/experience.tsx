@@ -1,7 +1,6 @@
 import Card from "../ui/card";
 import ExperienceList from "./experience-list";
 import ExperienceSelectorList from "./experience-selector-list";
-import styles from "./experience.module.css";
 
 interface Props {}
 
@@ -56,9 +55,11 @@ const experiences = [
 
 const Experience = (props: Props) => {
   return (
-    <Card className={styles.experience} id="experience">
-      <h2 className={styles.title}>02. Experience</h2>
-      <div className={styles.content}>
+    <Card className="flex flex-wrap flex-col mx-auto min-w-[600px]" id="experience">
+      <h2 className="self-start text-xl font-bold underline underline-offset-4 pb-4 text-yellow-500 ">
+        02. Experience
+      </h2>
+      <div className="flex flex-row justify-start space-x-8">
         <ExperienceSelectorList experiences={experiences} />
         <ExperienceList experiences={experiences} />
       </div>

@@ -1,5 +1,3 @@
-import { useState } from "react";
-import styles from "./experience-list.module.css";
 import ExperienceItem, { Experience } from "./experience-item";
 
 interface Props {
@@ -11,7 +9,7 @@ const ExperienceList = (props: Props) => {
     return <ExperienceItem key={index} id={index} experience={experience} />;
   });
 
-  return <div className={styles.experiences}>{experienceItems}</div>;
+  return <div>{experienceItems}</div>;
 };
 
 export default ExperienceList;

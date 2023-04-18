@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import styles from "./experience-item.module.css";
 import { RootState } from "../../store/store";
 
 export type Experience = {
@@ -21,17 +20,25 @@ const ExperienceItem = (props: Props) => {
   );
 
   const summaryItems = props.experience.summaryItems.map(
-    (summaryItem, index) => <li key={index}>{summaryItem}</li>
+    (summaryItem, index) => (
+      <li key={index} className="max-w-[300px] mb-2 ">
+        {summaryItem}
+      </li>
+    )
   );
 
   return (
-    <div hidden={activeExperienceId !== props.id} className={styles.experience}>
-      <h2 className={styles.title}>{props.experience.experienceName}</h2>
-      <p className={styles.role}>{props.experience.roleName}</p>
-      <p className={styles.tenure}>
+    <div hidden={activeExperienceId !== props.id} className="max-w-[500px]">
+      <h2 className="text-lg underline underline-offset-[6px] mb-2">
+        {props.experience.experienceName}
+      </h2>
+      <p className="font-semibold mb-1">{props.experience.roleName}</p>
+      <p className="mb-6 italic text-sm">
         {props.experience.startDate} - {props.experience.endDate}
       </p>
-      <ul>{summaryItems}</ul>
+      <ul className="list-inside list-disc w-[325px] max-h-[400px] overflow-y-scroll">
+        {summaryItems}
+      </ul>
     </div>
   );
 };

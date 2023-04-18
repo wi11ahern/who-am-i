@@ -1,5 +1,4 @@
 import { MouseEventHandler } from "react";
-import styles from "./experience-selector-button.module.css";
 import { RootState } from "../../store/store";
 import { useSelector } from "react-redux";
 
@@ -18,9 +17,9 @@ const ExperienceSelectorButton = (props: Props) => {
   return (
     <button
       id={props.id.toString()}
-      className={`${styles.button} ${props.className} ${
-        activeExperienceId === props.id ? styles.active : ""
-      }`}
+      className={`flex items-center relative h-10 w-48 border-solid border-slate-300 rounded-sm pl-4 transition-all duration-150 ${
+        props.className
+      } ${props.id === activeExperienceId ? "bg-blue-500 bg-opacity-60" : ""}`}
       onClick={props.onClick}
     >
       {props.experienceName}
