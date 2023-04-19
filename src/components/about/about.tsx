@@ -3,9 +3,7 @@ import profilePicture from "../../assets/wa.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-interface Props {}
-
-const About = (props: Props) => {
+const About = () => {
   return (
     <Card
       className="flex items-center flex-row flex-wrap min-w-[600px] max-w-[800px] mx-auto mb-40"
