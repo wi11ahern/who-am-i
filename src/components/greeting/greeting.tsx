@@ -2,7 +2,7 @@ import Card from "../ui/card";
 
 const Greeting = () => {
   return (
-    <Card className="mx-auto px-8 min-h-[calc(100vh_-_400px)]">
+    <Card className="mx-auto px-8 min-h-[calc(100vh_-_400px)] duration-[1.5s]">
       <p className="text-2xl">Hi, my name is</p>
       <h1 className="text-8xl text-yellow-500">
         William Ahern<span className="text-white">.</span>
