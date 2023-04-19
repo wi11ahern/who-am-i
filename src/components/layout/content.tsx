@@ -5,7 +5,7 @@ import Greeting from "../greeting/greeting";
 
 const Content = () => {
   return (
-    <div className="flex flex-col mx-auto mt-60 w-full min-h-screen">
+    <div className="flex flex-col mx-auto mt-[400px] w-full min-h-screen">
       <Greeting />
       <About />
       <Experience />
