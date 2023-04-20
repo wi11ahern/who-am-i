@@ -15,6 +15,7 @@ export default {
       },
       animation: {
         wiggle: "wiggle .5s ease-in-out infinite",
+        bounce: "bounce 1.5s infinite",
       },
     },
   },

@@ -21,7 +21,7 @@ const Card = (props: Props) => {
     <div
       ref={ref}
       id={props.id}
-      className={`bg-inherit text-white rounded-md m-4 p-3 ${props.className} ${isIntersectingStyles} transition-opacity duration-[1s] ease-in-out}`}
+      className={`bg-inherit text-white rounded-md m-4 p-3 ${props.className} ${isIntersectingStyles} transition-opacity duration-[1s] ease-in-out`}
     >
       {props.children}
     </div>
