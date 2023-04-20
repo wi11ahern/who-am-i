@@ -1,5 +1,4 @@
 import Card from "../ui/card";
-import ScrollDownButton from "../ui/scroll-button";
 
 const Greeting = () => {
   return (
@@ -17,7 +16,6 @@ const Greeting = () => {
         <span className="text-emerald-400">problem solver</span>, and{" "}
         <span className="text-emerald-400">lifelong learner</span>.
       </p>
-      <ScrollDownButton targetId="about" />
     </Card>
   );
 };
