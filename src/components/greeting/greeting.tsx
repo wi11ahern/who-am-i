@@ -1,8 +1,9 @@
 import Card from "../ui/card";
+import ScrollDownButton from "../ui/scroll-button";
 
 const Greeting = () => {
   return (
-    <Card className="mx-auto px-8 mt-[40vh] py-0 min-h-[60vh] duration-[1.5s]">
+    <Card className="flex flex-col mx-auto px-8 mt-[40vh] py-0 min-h-[60vh] duration-[1.5s]">
       <p className="text-2xl">Hi, my name is</p>
       <h1 className="text-8xl text-yellow-500">
         William Ahern<span className="text-white">.</span>
@@ -16,6 +17,7 @@ const Greeting = () => {
         <span className="text-emerald-400">problem solver</span>, and{" "}
         <span className="text-emerald-400">lifelong learner</span>.
       </p>
+      <ScrollDownButton targetId="about" />
     </Card>
   );
 };
