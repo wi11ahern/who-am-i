@@ -6,11 +6,11 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const About = () => {
   return (
     <Card
-      className="flex items-center flex-row flex-wrap min-w-[600px] max-w-[800px] mx-auto mb-40"
+      className="col-start-2 col-end-2 row-start-2 row-end-2 justify-self-center m-0 flex items-start flex-wrap min-w-[300px] max-w-[900px]"
       id="about"
     >
-      <div className="flex-grow-3 w-[65%] mx-auto">
-        <h2 className="text-xl font-bold underline underline-offset-4 pb-4 text-yellow-500">
+      <div className="mx-auto flex-grow-3 min-w-[300px] w-[65%]">
+        <h2 className="pb-4 text-xl font-bold text-yellow-500 underline underline-offset-4">
           01. About
         </h2>
         <p className="mb-4">
@@ -47,15 +47,15 @@ const About = () => {
           have allowed me to gain valuable knowledge with many programming
           languages and technologies such as, but not limited to:
         </p>
-        <div className="flex items-center justify-start space-x-10 mb-4">
-          <ul className="list-inside list-disc">
+        <div className="flex items-center justify-start mb-4 space-x-10">
+          <ul className="list-disc list-inside">
             <li>TypeScript</li>
             <li>Python</li>
             <li>Java</li>
             <li>HTML</li>
             <li>CSS</li>
           </ul>
-          <ul className="list-inside list-disc">
+          <ul className="list-disc list-inside">
             <li>AWS</li>
             <li>Terraform</li>
             <li>Terragrunt</li>
@@ -64,10 +64,10 @@ const About = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col items-center flex-grow-1 max-w-[175px] ml-2">
+      <div className="flex flex-col items-center flex-grow-1 min-w-[100px] max-w-[175px] mx-auto mt-[10%]">
         <img
           src={profilePicture}
-          className="rounded-full border-solid border-4 border-yellow-500 sepia hover:filter-none transition-all duration-500"
+          className="transition-all duration-500 border-4 border-yellow-500 border-solid rounded-full sepia hover:filter-none"
         ></img>
         <a
           href="https://www.linkedin.com/in/william-ahern/"
