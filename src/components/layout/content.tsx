@@ -6,7 +6,7 @@ import ScrollDownButton from "../ui/scroll-down-button";
 
 const Content = () => {
   return (
-    <div className="flex flex-col mx-auto w-full min-h-screen">
+    <div className="grid grid-cols-[10%_80%_10%] grid-rows-4">
       <Greeting />
       <ScrollDownButton targetId="about" />
       <About />
