@@ -6,10 +6,10 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Contact = () => {
   return (
     <Card
-      className="flex items-center flex-col min-w-[600px] max-w-[600px] mx-auto mb-40"
+      className="row-start-4 flex items-center flex-col min-w-[600px] max-w-[600px] mx-auto mb-40"
       id="contact"
     >
-      <h2 className="text-xl font-bold underline underline-offset-4 pb-4 text-yellow-500">
+      <h2 className="pb-4 text-xl font-bold text-yellow-500 underline underline-offset-4">
         03. Contact
       </h2>
       <p className="max-w-[50%] text-center">

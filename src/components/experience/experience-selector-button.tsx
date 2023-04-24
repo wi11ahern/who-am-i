@@ -17,9 +17,12 @@ const ExperienceSelectorButton = (props: Props) => {
   return (
     <button
       id={props.id.toString()}
-      className={`flex items-center relative h-10 w-48 border-solid border-slate-300 rounded-sm pl-4 transition-all duration-150 ${
-        props.className
-      } ${props.id === activeExperienceId ? "bg-blue-500 bg-opacity-60" : ""}`}
+      className={`text-center w-[200px] h-full rounded-sm transition-all duration-150 
+                  sm:text-left sm:h-10 sm:pl-4 sm:min-w-full ${
+                    props.className
+                  } ${
+        props.id === activeExperienceId ? "bg-blue-500 bg-opacity-60" : ""
+      }`}
       onClick={props.onClick}
     >
       {props.experienceName}
