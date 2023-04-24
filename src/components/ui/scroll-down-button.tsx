@@ -31,8 +31,9 @@ const ScrollDownButton = (props: Props) => {
   return (
     <button
       ref={ref}
-      className={`absolute bottom-[7vh] right-[50vw] w-7 h-7 text-blue-400 hover:text-emerald-400 hover:transition-colors
-                  hover:duration-500 transition-all ease-in-out duration-[1s] animate-bounce ${props.className} ${isIntersectingStyles}`}
+      className={`absolute bottom-[7vh] right-[50vw] min-w-[1rem] w-7 max-w-[1.75rem] min-h-[1rem] h-7 max-h-[1.75rem] text-blue-400 
+                hover:text-emerald-400 hover:transition-colors hover:duration-500
+                  transition-all ease-in-out duration-[1s] animate-bounce ${props.className} ${isIntersectingStyles}`}
       onClick={scrollToHandler}
     >
       <FontAwesomeIcon icon={faAnglesDown} className="w-auto h-auto" />
