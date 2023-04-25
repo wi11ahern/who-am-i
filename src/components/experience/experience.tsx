@@ -57,7 +57,7 @@ const Experience = (props: Props) => {
   return (
     <Card
       className="col-start-2 col-end-3 row-start-3 row-end-4 grid grid-cols-1 grid-rows-[30px_600px] gap-y-4 justify-items-center
-                 sm:mx-auto"
+                 sm:mx-auto sm:items-center sm:grid-rows-[auto_auto]"
       id="experience"
     >
       <h2 className="justify-self-start row-start-1 row-end-2 text-xl font-bold text-yellow-500 underline underline-offset-4 sm:col-start-1 sm:col-end-2">
