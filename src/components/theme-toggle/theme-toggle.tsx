@@ -23,7 +23,7 @@ const ThemeToggle = () => {
   return (
     <label
       htmlFor="theme-toggle"
-      className="relative inline-block mx-[1rem] my-auto min-w-[20px] h-10 min-h-[40px] cursor-pointer"
+      className="relative ml-auto mr-4 sm:mx-auto sm:ml-4 inline-block my-auto min-w-[20px] h-10 min-h-[40px] cursor-pointer"
     >
       <input
         id="theme-toggle"
@@ -31,7 +31,7 @@ const ThemeToggle = () => {
         onChange={onToggleHandler}
         ref={toggleRef}
         checked={checked}
-        className="peer opacity-0 w-0 h-0"
+        className="w-0 h-0 opacity-0 peer"
       />
       <span
         className="absolute z-[1] top-0 left-0 bottom-0 right-0 border-solid border-[1px] rounded-full

@@ -1,9 +1,12 @@
+import { useSelector } from "react-redux";
 import useScrollDirection from "../../hooks/useScrollDirection";
+import { RootState } from "../../store/store";
 import ThemeToggle from "../theme-toggle/theme-toggle";
 import MainNav from "./main-nav";
 import WhoAmILogo from "./whoami-logo";
 
 const Header = () => {
+  const isMobile = useSelector((state: RootState) => state.ui.isMobile);
   const scrollDirection = useScrollDirection();
   const headerHeight =
     scrollDirection === "down" ? "h-0 border-none" : "h-headerHeight border-b";
@@ -16,7 +19,7 @@ const Header = () => {
     >
       <WhoAmILogo />
       <ThemeToggle />
-      <MainNav />
+      {!isMobile && <MainNav />}
     </header>
   );
 };

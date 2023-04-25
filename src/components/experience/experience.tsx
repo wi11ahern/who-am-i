@@ -2,8 +2,6 @@ import Card from "../ui/card";
 import ExperienceList from "./experience-list";
 import ExperienceSelectorList from "./experience-selector-list";
 
-interface Props {}
-
 const experiences = [
   {
     experienceName: "Amazon Web Services",
@@ -53,13 +51,20 @@ const experiences = [
   },
 ];
 
-const Experience = (props: Props) => {
+const Experience = () => {
   return (
-    <Card className="flex flex-wrap flex-col mx-auto min-w-[600px] mb-40" id="experience">
-      <h2 className="self-start text-xl font-bold underline underline-offset-4 pb-4 text-yellow-500 ">
+    <Card
+      className="col-start-2 col-end-3 row-start-3 row-end-4 grid grid-cols-1 grid-rows-[30px_600px] gap-y-4 justify-items-center
+                 sm:mx-auto sm:items-center sm:grid-rows-[auto_auto]"
+      id="experience"
+    >
+      <h2 className="row-start-1 row-end-2 text-xl font-bold text-yellow-500 underline justify-self-start underline-offset-4 sm:col-start-1 sm:col-end-2">
         02. Experience
       </h2>
-      <div className="flex flex-row justify-start space-x-8">
+      <div
+        className="row-start-2 row-end-3 grid gap-y-4 grid-rows-[40px_80%] grid-cols-1 
+                   sm:grid-cols-[minmax(200px,250px)_70%] sm:col-span-3 sm:grid-rows-1"
+      >
         <ExperienceSelectorList experiences={experiences} />
         <ExperienceList experiences={experiences} />
       </div>

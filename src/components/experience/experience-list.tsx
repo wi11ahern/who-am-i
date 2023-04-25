@@ -9,7 +9,7 @@ const ExperienceList = (props: Props) => {
     return <ExperienceItem key={index} id={index} experience={experience} />;
   });
 
-  return <div>{experienceItems}</div>;
+  return <>{experienceItems}</>;
 };
 
 export default ExperienceList;

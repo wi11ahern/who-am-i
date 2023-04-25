@@ -18,7 +18,6 @@ const ScrollDownButton = (props: Props) => {
 
   const { ref, inView } = useInView(intersectionOptions);
   const isIntersectingStyles = inView ? "opacity-100" : "opacity-0";
-  console.log(`ScrollDownButton: ${isIntersectingStyles}`);
 
   const scrollToHandler = () => {
     const targetElement = document.getElementById(props.targetId);
@@ -31,8 +30,9 @@ const ScrollDownButton = (props: Props) => {
   return (
     <button
       ref={ref}
-      className={`absolute bottom-[7vh] right-[50vw] w-7 h-7 text-blue-400 hover:text-emerald-400 hover:transition-colors
-                  hover:duration-500 transition-all ease-in-out duration-[1s] animate-bounce ${props.className} ${isIntersectingStyles}`}
+      className={`absolute bottom-[7vh] left-[50%] ml-[-16px] flex flex-col items-start w-8 h-14 text-blue-400 
+                hover:text-emerald-400 hover:transition-colors hover:duration-500
+                  transition-all ease-in-out duration-[1s] animate-bounce ${props.className} ${isIntersectingStyles}`}
       onClick={scrollToHandler}
     >
       <FontAwesomeIcon icon={faAnglesDown} className="w-auto h-auto" />
