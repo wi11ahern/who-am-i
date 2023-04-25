@@ -10,8 +10,14 @@ export type SetThemeAction = {
   payload: Theme;
 };
 
+export type SetIsMobileAction = {
+  type: string;
+  payload: boolean;
+}
+
 const initialState = {
   theme: Theme.Dark,
+  isMobile: true,
 };
 
 const uiSlice = createSlice({
@@ -21,6 +27,9 @@ const uiSlice = createSlice({
     setTheme(state, action: SetThemeAction) {
       state.theme = action.payload;
     },
+    setIsMobile(state, action: SetIsMobileAction) {
+      state.isMobile = action.payload;
+    }
   },
 });
 

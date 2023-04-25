@@ -1,26 +1,15 @@
-import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import useScrollDirection from "../../hooks/useScrollDirection";
+import { RootState } from "../../store/store";
 import ThemeToggle from "../theme-toggle/theme-toggle";
 import MainNav from "./main-nav";
 import WhoAmILogo from "./whoami-logo";
 
 const Header = () => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const isMobile = useSelector((state: RootState) => state.ui.isMobile);
   const scrollDirection = useScrollDirection();
   const headerHeight =
     scrollDirection === "down" ? "h-0 border-none" : "h-headerHeight border-b";
-
-  useEffect(() => {
-    function handleResize() {
-      setScreenWidth(window.innerWidth);
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <header
@@ -30,7 +19,7 @@ const Header = () => {
     >
       <WhoAmILogo />
       <ThemeToggle />
-      {screenWidth > 640 && <MainNav />}
+      {!isMobile && <MainNav />}
     </header>
   );
 };
