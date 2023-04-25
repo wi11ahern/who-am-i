@@ -6,7 +6,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const About = () => {
   return (
     <Card
-      className="col-start-2 col-end-2 row-start-2 row-end-2 justify-self-center m-0 flex items-start flex-wrap min-w-[300px] max-w-[900px]"
+      className="col-start-2 col-end-2 row-start-2 row-end-2 justify-self-center mt-[-160px] flex items-start flex-wrap min-w-[300px] max-w-[900px]"
       id="about"
     >
       <div className="mx-auto flex-grow-3 min-w-[300px] w-[65%]">
