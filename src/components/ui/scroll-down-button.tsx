@@ -12,7 +12,6 @@ interface Props {
 const ScrollDownButton = (props: Props) => {
   const intersectionOptions = props.intersectionOptions || {
     threshold: 1,
-    trackVisibility: true,
     rootMargin: "-80% 0px 0px 0px",
   };
 
