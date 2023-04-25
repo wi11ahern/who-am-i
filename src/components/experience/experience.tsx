@@ -2,8 +2,6 @@ import Card from "../ui/card";
 import ExperienceList from "./experience-list";
 import ExperienceSelectorList from "./experience-selector-list";
 
-interface Props {}
-
 const experiences = [
   {
     experienceName: "Amazon Web Services",
@@ -53,14 +51,14 @@ const experiences = [
   },
 ];
 
-const Experience = (props: Props) => {
+const Experience = () => {
   return (
     <Card
       className="col-start-2 col-end-3 row-start-3 row-end-4 grid grid-cols-1 grid-rows-[30px_600px] gap-y-4 justify-items-center
                  sm:mx-auto sm:items-center sm:grid-rows-[auto_auto]"
       id="experience"
     >
-      <h2 className="justify-self-start row-start-1 row-end-2 text-xl font-bold text-yellow-500 underline underline-offset-4 sm:col-start-1 sm:col-end-2">
+      <h2 className="row-start-1 row-end-2 text-xl font-bold text-yellow-500 underline justify-self-start underline-offset-4 sm:col-start-1 sm:col-end-2">
         02. Experience
       </h2>
       <div
