@@ -72,7 +72,7 @@ const About = () => {
         <a
           href="https://www.linkedin.com/in/william-ahern/"
           target="_blank"
-          className="flex-grow-4 flex flex-col items-center w-8 h-8 mt-2 hover:text-blue-400"
+          className="w-8 h-8 mt-2 hover:text-blue-400"
         >
           <FontAwesomeIcon icon={faLinkedin} className="w-auto h-auto" />
         </a>
