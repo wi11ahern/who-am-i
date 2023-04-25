@@ -1,12 +1,26 @@
+import { useEffect, useState } from "react";
 import useScrollDirection from "../../hooks/useScrollDirection";
 import ThemeToggle from "../theme-toggle/theme-toggle";
 import MainNav from "./main-nav";
 import WhoAmILogo from "./whoami-logo";
 
 const Header = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const scrollDirection = useScrollDirection();
   const headerHeight =
     scrollDirection === "down" ? "h-0 border-none" : "h-headerHeight border-b";
+
+  useEffect(() => {
+    function handleResize() {
+      setScreenWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <header
@@ -16,7 +30,7 @@ const Header = () => {
     >
       <WhoAmILogo />
       <ThemeToggle />
-      <MainNav />
+      {screenWidth > 640 && <MainNav />}
     </header>
   );
 };
