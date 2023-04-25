@@ -30,7 +30,8 @@ const ExperienceItem = (props: Props) => {
   return (
     <div
       hidden={activeExperienceId !== props.id}
-      className="row-start-2 row-end-3 ml-6 sm:row-start-1 sm:row-end-2 sm:col-start-2 sm:col-end-3"
+      className="row-start-2 row-end-3 ml-6 h-full
+                 sm:row-start-1 sm:row-end-2 sm:col-start-2 sm:col-end-3"
     >
       <h2 className="text-lg text-emerald-400 underline underline-offset-[6px] mb-2">
         {props.experience.experienceName}

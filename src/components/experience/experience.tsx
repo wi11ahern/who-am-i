@@ -63,7 +63,7 @@ const Experience = () => {
       </h2>
       <div
         className="row-start-2 row-end-3 grid gap-y-4 grid-rows-[40px_80%] grid-cols-1 
-                   sm:grid-cols-[minmax(200px,250px)_70%] sm:col-span-3 sm:grid-rows-1"
+                   sm:grid-cols-[minmax(200px,250px)_70%] sm:col-span-3 sm:grid-rows-[550px]"
       >
         <ExperienceSelectorList experiences={experiences} />
         <ExperienceList experiences={experiences} />
