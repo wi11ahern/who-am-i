@@ -18,7 +18,6 @@ const ScrollDownButton = (props: Props) => {
 
   const { ref, inView } = useInView(intersectionOptions);
   const isIntersectingStyles = inView ? "opacity-100" : "opacity-0";
-  console.log(`ScrollDownButton: ${isIntersectingStyles}`);
 
   const scrollToHandler = () => {
     const targetElement = document.getElementById(props.targetId);
