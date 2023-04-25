@@ -6,7 +6,7 @@ import ScrollDownButton from "../ui/scroll-down-button";
 
 const Content = () => {
   return (
-    <div className="grid grid-cols-[10%_80%_10%] grid-rows-4">
+    <div className="grid grid-cols-[10%_80%_10%] grid-rows-[auto_auto_auto_auto] gap-y-40">
       <Greeting />
       <ScrollDownButton targetId="about" />
       <About />
