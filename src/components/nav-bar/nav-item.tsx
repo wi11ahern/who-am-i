@@ -1,11 +1,11 @@
-import { MouseEventHandler, ReactNode, useState } from "react";
+import { ReactNode, useState } from "react";
 import ReactDOM from "react-dom";
 import Backdrop from "../ui/backdrop";
 import { useDispatch } from "react-redux";
 import { uiActions } from "../../store/ui";
 
 interface Props {
-  icon: any;
+  icon: ReactNode;
   children?: ReactNode;
 }
 
