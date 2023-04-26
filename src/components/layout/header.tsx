@@ -32,13 +32,8 @@ const Header = () => {
     </NavBar>
   );
 
-  const nonMobileNav = <MainNav />;
-
-  if (isMobile) {
-    var nav = mobileNav;
-  } else {
-    nav = nonMobileNav;
-  }
+  let nav = mobileNav;
+  if (!isMobile) nav = <MainNav />;
 
   return (
     <header
