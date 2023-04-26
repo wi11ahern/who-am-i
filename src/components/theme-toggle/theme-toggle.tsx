@@ -23,7 +23,7 @@ const ThemeToggle = () => {
   return (
     <label
       htmlFor="theme-toggle"
-      className="relative ml-auto mr-4 sm:mx-auto sm:ml-4 inline-block my-auto min-w-[20px] h-10 min-h-[40px] cursor-pointer"
+      className="relative ml-3 mr-4 sm:mx-auto sm:ml-4 inline-block my-auto min-w-[20px] h-10 min-h-[40px] cursor-pointer"
     >
       <input
         id="theme-toggle"

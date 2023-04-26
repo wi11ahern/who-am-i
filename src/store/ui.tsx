@@ -15,9 +15,15 @@ export type SetIsMobileAction = {
   payload: boolean;
 };
 
+export type SetDropDownOpenAction = {
+  type: string;
+  payload: boolean;
+};
+
 const initialState = {
   theme: Theme.Dark,
   isMobile: window.innerWidth < 640,
+  dropDownOpen: false,
 };
 
 const uiSlice = createSlice({
@@ -29,6 +35,9 @@ const uiSlice = createSlice({
     },
     setIsMobile(state, action: SetIsMobileAction) {
       state.isMobile = action.payload;
+    },
+    setDropDownOpen(state, action: SetDropDownOpenAction) {
+      state.dropDownOpen = action.payload;
     },
   },
 });

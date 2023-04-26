@@ -7,7 +7,7 @@ interface Props {
   hoverContent?: string;
 }
 
-const NavItem = (props: Props) => {
+const MainNavItem = (props: Props) => {
   const beforeContent = props.beforeContent ? props.beforeContent : "";
   const beforeContentOffset = props.beforeContentOffset
     ? props.beforeContentOffset
@@ -39,4 +39,4 @@ const NavItem = (props: Props) => {
   );
 };
 
-export default NavItem;
+export default MainNavItem;
