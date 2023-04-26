@@ -1,4 +1,4 @@
-import DropDownItem from "./down-down-item";
+import DropDownItem from "./drop-down-item";
 
 const DropDownMenu = () => {
   return (
