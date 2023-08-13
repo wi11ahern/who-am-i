@@ -22,22 +22,29 @@ const About = () => {
           graduation.
         </p>
         <p className="mb-4">
-          So far, I have been privileged to work for two fortune 500 companies;
+          So far, I have been privileged to work for three fortune 500 companies;
           one a major competitor in{" "}
           <a
             href="https://cigna.com"
             target="_blank"
             className="text-blue-400 hover:text-emerald-300"
           >
-            healthcare
+            healthcare,
           </a>{" "}
-          and the other in{" "}
+          another in{" "}
           <a
             href="https://aws.amazon.com"
             target="_blank"
             className="text-blue-400 hover:text-emerald-300"
           >
-            global technology and cloud services
+            global technology and cloud services,{" "}
+          </a>
+          and the most recent,{" "}
+          <a             
+            href="https://thehartford.com"
+            target="_blank"
+            className="text-blue-400 hover:text-emerald-300">
+            an industry leader in property and casualty insurance, groups benefits and mutual funds
           </a>
           .
         </p>
