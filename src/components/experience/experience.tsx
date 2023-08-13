@@ -21,11 +21,11 @@ const experiences = [
     startDate: "May 2022",
     endDate: "June 2023",
     summaryItems: [
-      "Enable service teams in deployment of on-demand test environments through the development of a service-wide, infrastructure-as-code framework.",
-      "Maintain and troubleshoot service-level systems and globally deployed infrastructure during business hours and off-hours during production on-call rotations.",
-      "Guide external teams with migrating legacy infrastructure definitions to modern infrastructure-as-code tooling.",
-      "Perform scrum master duties and host Agile ceremonies for the team.",
-      "Led service-level campaign to migrate CI/CD deployment technologies under a tight deadline that prevented the service’s deployment mechanism from being inoperable.",
+      "Empowered service teams to deploy on-demand test environments by creating a comprehensive infrastructure-as-code framework.",
+      "Managed and resolved issues related to service-level systems and worldwide deployed infrastructure, ensuring operational integrity during both business hours and off-hours as part of production on-call rotations.",
+      "Directed external teams in the migration of legacy infrastructure definitions to contemporary infrastructure-as-code tools.",
+      "Executed scrum master responsibilities and facilitated Agile ceremonies for the team.",
+      "Headed a service-level initiative to successfully migrate CI/CD deployment technologies within a challenging timeline, preventing disruptions to the service's deployment mechanism.",
     ],
   },
   {
