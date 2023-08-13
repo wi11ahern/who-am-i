@@ -4,10 +4,22 @@ import ExperienceSelectorList from "./experience-selector-list";
 
 const experiences = [
   {
+    experienceName: "The Hartford",
+    roleName: "Sr. Machine Learning Engineer",
+    startDate: "June 2023",
+    endDate: "Present",
+    summaryItems: [
+      "Lead and facilitate successful on-premises to cloud migrations for machine learning models within data science teams.",
+      "Enhance machine learning solution deployment speed through the implementation of Continuous Integration/Continuous Deployment (CI/CD) methodologies.",
+      "Spearhead efforts to enhance engineering velocity by optimizing development practices, refining processes, and implementing advanced tooling.",
+      "Share cloud expertise by guiding engineering teams on optimal AWS utilization and industry best practices."
+    ],
+  },
+  {
     experienceName: "Amazon Web Services",
     roleName: "Systems Development Engineer II",
     startDate: "May 2022",
-    endDate: "Present",
+    endDate: "June 2023",
     summaryItems: [
       "Enable service teams in deployment of on-demand test environments through the development of a service-wide, infrastructure-as-code framework.",
       "Maintain and troubleshoot service-level systems and globally deployed infrastructure during business hours and off-hours during production on-call rotations.",
